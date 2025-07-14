@@ -51,62 +51,54 @@
       border: none;
       background: #1a1a1a;
       color: #8ff;
+      cursor: pointer;
     }
-    .server-list {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .server {
-      background: #2e2e2e;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 8px;
-      border-left: 5px solid #ffa500;
-    }
-    .server h2 {
-      margin: 0 0 0.5rem 0;
-      color: #fff;
-    }
-    .server p {
-      margin: 0.2rem 0;
-    }
-    .ip {
-      font-family: monospace;
-      color: #8ff;
+    .tip {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 0.25rem;
     }
   </style>
 </head>
 <body>
-  <h1>🎮 Lemmingnet Minecraft Servers</h1>
+  <h1>🎮 LemmingNet Minecraft Servers</h1>
+
   <div class="instructions">
     <h2>📝 How to Add These Servers to Minecraft Java Edition</h2>
     <ol>
       <li>Open the <strong>Minecraft Launcher</strong> and start <strong>Java Edition</strong>.</li>
-      <li>From the main menu, click <strong>"Multiplayer"</strong>.</li>
-      <li>Click the <strong>"Add Server"</strong> button at the bottom.</li>
-      <li>In the <strong>Server Name</strong> field, enter anything you like (e.g. "LemmingNet Creative").</li>
-      <li>In the <strong>Server Address</strong> field, enter the full address and port (see below).</li>
-      <li>Click <strong>"Done"</strong>.</li>
-      <li>Repeat for any other servers you want to add.</li>
-      <li>Back in the server list, click the server you want and hit <strong>"Join Server"</strong>.</li>
+      <li>Click <strong>"Multiplayer"</strong> from the main menu.</li>
+      <li>Click <strong>"Add Server"</strong>.</li>
+      <li>Enter a name (e.g. "LemmingNet Creative").</li>
+      <li>Copy the IP address below and paste it into the <strong>Server Address</strong> box.</li>
+      <li>Click <strong>"Done"</strong>, and repeat for other servers if you'd like.</li>
     </ol>
   </div>
+
   <div class="server-list">
     <div class="server">
-      <h2>2019 Creative Server</h2>
-      <p><span class="ip">lemmingnet.ddns.net:25567</span></p>
+      <h3>2019 Creative Server</h3>
+      <p>Click the box below to select the address:</p>
+      <input class="copy-box" type="text" readonly value="lemmingnet.ddns.net:25567" onclick="this.select()" />
+      <div class="tip">Click the box to highlight the address for easy copying.</div>
     </div>
     <div class="server">
-      <h2>Survival Server 1</h2>
-      <p><span class="ip">lemmingnet.ddns.net:25568</span></p>
+      <h3>Survival Server 1</h3>
+      <p>Click the box below to select the address:</p>
+      <input class="copy-box" type="text" readonly value="lemmingnet.ddns.net:25568" onclick="this.select()" />
+      <div class="tip">Click the box to highlight the address for easy copying.</div>
     </div>
     <div class="server">
-      <h2>Survival Server 2</h2>
-      <p><span class="ip">lemmingnet.ddns.net:25570</span></p>
+      <h3>Survival Server 2</h3>
+      <p>Click the box below to select the address:</p>
+      <input class="copy-box" type="text" readonly value="lemmingnet.ddns.net:25570" onclick="this.select()" />
+      <div class="tip">Click the box to highlight the address for easy copying.</div>
     </div>
     <div class="server">
-      <h2>Muffin's Romp Around</h2>
-      <p><span class="ip">lemmingnet.ddns.net:25590</span></p>
+      <h3>Muffin's Romp Around</h3>
+      <p>Click the box below to select the address:</p>
+      <input class="copy-box" type="text" readonly value="lemmingnet.ddns.net:25590" onclick="this.select()" />
+      <div class="tip">Click the box to highlight the address for easy copying.</div>
     </div>
   </div>
 </body>
